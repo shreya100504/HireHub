@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>HireHub - Candidate Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <h2>HireHub</h2>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+             <a href="candidate-profile.html">
+                 My Profile
+             </a>
+
+            <button id="logoutButton">
+                Logout
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="dashboard-container">
+
+        <!-- USER INFORMATION -->
+
+        <section class="welcome-section">
+
+            <h1 id="welcomeMessage">
+                Welcome to HireHub!
+            </h1>
+
+            <p id="userInfo">
+                Loading user information...
+            </p>
+
+        </section>
+
+        <section class="notifications-section">
+            <h2>
+                Notifications
+                (<span id="unreadNotificationCount">0</span> unread)
+            </h2>
+
+            <div id="notificationsContainer">
+                <p>Loading notifications...</p>
+            </div>
+        </section>
+
+        <!-- STATISTICS -->
+
+        <section class="stats-container">
+
+            <div class="stat-card">
+
+                <h3>Available Jobs</h3>
+
+                <p id="jobCount">
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>Applications</h3>
+
+                <p id="applicationCount">
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>Interviews</h3>
+
+                <p id="interviewCount">
+                    0
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SEARCH -->
+
+
+        <section class="search-section">
+
+            <h2>Find Jobs</h2>
+
+            <!-- Keyword Search -->
+            <input
+                type="text"
+                id="jobSearch"
+                placeholder="Search by job title, skill or keyword..."
+            >
+
+            <!-- Advanced Filters -->
+            <div class="job-filters">
+
+                <h3>Advanced Filters</h3>
+
+                <select id="locationFilter">
+                    <option value="">All Locations</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Remote">Remote</option>
+                </select>
+
+                <select id="experienceFilter">
+                    <option value="">All Experience Levels</option>
+                    <option value="Fresher">Fresher</option>
+                    <option value="0-1 Years">0-1 Years</option>
+                    <option value="1-3 Years">1-3 Years</option>
+                    <option value="3-5 Years">3-5 Years</option>
+                </select>
+
+                <select id="employmentFilter">
+                    <option value="">All Employment Types</option>
+                    <option value="Full-time">Full-time</option>
+                    <option value="Part-time">Part-time</option>
+                    <option value="Internship">Internship</option>
+                    <option value="Contract">Contract</option>
+                </select>
+
+                <select id="remoteFilter">
+                    <option value="">All Work Modes</option>
+                    <option value="true">Remote</option>
+                    <option value="false">On-site</option>
+                </select>
+
+                <input
+                    type="number"
+                    id="minSalaryFilter"
+                    placeholder="Minimum salary"
+                    min="0"
+                >
+
+                <input
+                    type="number"
+                    id="maxSalaryFilter"
+                    placeholder="Maximum salary"
+                    min="0"
+                >
+
+                <button
+                    type="button"
+                    id="clearFilters"
+                >
+                    Clear Filters
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- SMARTMATCH RECOMMENDATIONS -->
+
+        <section class="applications-section">
+
+            <h2>HireHub SmartMatch</h2>
+
+            <p>
+                Jobs recommended according to your profile skills.
+            </p>
+
+            <div id="recommendationsContainer">
+                <p>Loading recommendations...</p>
+            </div>
+
+        </section>
+
+        <!-- AVAILABLE JOBS -->
+
+        <section>
+
+            <h2>Available Jobs</h2>
+
+            <div id="jobsContainer">
+
+                <p>Loading jobs...</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- MY APPLICATIONS -->
+
+        <section class="applications-section">
+
+            <h2>My Applications</h2>
+
+            <div id="applicationsContainer">
+
+                <p>Loading applications...</p>
+
+            </div>
+
+        </section>
+
+        <!-- MY INTERVIEWS -->
+
+        <section class="applications-section">
+
+            <h2>
+                My Interviews
+            </h2>
+
+            <div id="candidateInterviewsContainer">
+
+                <p>
+                    Loading interviews...
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SAVED JOBS -->
+
+        <section class="applications-section">
+
+            <h2>
+                Saved Jobs
+            </h2>
+
+            <div id="savedJobsContainer">
+
+                <p>
+                    Loading saved jobs...
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

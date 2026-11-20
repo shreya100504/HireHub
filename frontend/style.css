@@ -1,0 +1,777 @@
+/* /* =========================================
+   GENERAL
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #0F172A;
+
+    color: #222;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background: #1E293B;
+
+    color: white;
+
+    padding: 18px 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+header h2 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+button {
+    border: none;
+
+    border-radius: 6px;
+
+    padding: 10px 18px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+#logoutButton {
+    background: white;
+
+    color: #b53bf6;
+}
+
+#logoutButton:hover {
+    background: #e9eefc;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+main {
+    max-width: 1100px;
+
+    margin: 30px auto;
+
+    padding: 0 20px;
+}
+
+
+/* =========================================
+   WELCOME
+========================================= */
+
+.welcome {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.welcome h1 {
+    margin-top: 0;
+
+    color: #17f3ff;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.search-section {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.search-section h2 {
+    margin-top: 0;
+}
+
+#jobSearch {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   JOB CARDS
+========================================= */
+
+#jobsContainer {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 20px;
+}
+
+.job-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.job-card h3 {
+    margin-top: 0;
+
+    color: #1769ff;
+
+    font-size: 22px;
+}
+
+.job-card p {
+    line-height: 1.5;
+}
+
+.apply-button {
+    background: #1769ff;
+
+    color: white;
+
+    margin-top: 10px;
+
+    width: 100%;
+}
+
+.apply-button:hover {
+    background: #0d55d9;
+}
+
+/* =========================================
+   DASHBOARD
+========================================= */
+
+.dashboard-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+
+.welcome-section {
+    margin-bottom: 30px;
+}
+
+
+.stats-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+
+.stat-card {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+.stat-card h3 {
+    margin-top: 0;
+}
+
+
+.stat-card p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.search-section {
+    margin-bottom: 30px;
+}
+
+
+#jobSearch {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+
+.job-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+.application-card {
+    background: white;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+.applications-section {
+    margin-top: 40px;
+    margin-bottom: 50px;
+} */
+/* 
+
+/* =====================================================
+   HIREHUB - SLEEK DARK MODE THEME
+   ===================================================== */
+
+/* =====================================================
+   GENERAL
+   ===================================================== */
+
+body {
+    background-color: #0F172A !important;
+    color: #F8FAFC !important;
+}
+
+
+/* =====================================================
+   HEADER / NAVBAR
+   ===================================================== */
+
+header,
+.navbar,
+nav {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+}
+
+header h2 {
+    color: #F8FAFC !important;
+}
+
+header a,
+.navbar a,
+nav a {
+    color: #F8FAFC !important;
+}
+
+header a:hover,
+.navbar a:hover,
+nav a:hover {
+    color: #3B82F6 !important;
+}
+
+
+/* =====================================================
+   MAIN HEADINGS
+   ===================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #F8FAFC !important;
+}
+
+
+/* =====================================================
+   WELCOME SECTION
+   ===================================================== */
+
+.welcome,
+.welcome-section {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+}
+
+.welcome h1 {
+    color: #3B82F6 !important;
+}
+
+
+/* =====================================================
+   SEARCH SECTION
+   ===================================================== */
+
+.search-section {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+}
+
+
+/* =====================================================
+   CARDS
+   ===================================================== */
+
+.card,
+.stat-card,
+.job-card,
+.application-card,
+.interview-card,
+section {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+}
+
+
+/* Card borders */
+.stat-card,
+.job-card,
+.application-card,
+.interview-card {
+    border: 1px solid #334155 !important;
+}
+
+
+/* =====================================================
+   STATISTICS
+   ===================================================== */
+
+.stat-card h3 {
+    color: #F8FAFC !important;
+}
+
+.stat-card p {
+    color: #ce3bf6 !important;
+}
+
+
+/* =====================================================
+   JOB CARDS
+   ===================================================== */
+
+.job-card h3 {
+    color: #ce3bf6 !important;
+}
+
+.job-card p,
+.job-card strong {
+    color: #F8FAFC !important;
+}
+
+
+/* =====================================================
+   APPLICATION CARDS
+   ===================================================== */
+
+.application-card h3,
+.application-card strong {
+    color: #F8FAFC !important;
+}
+
+.application-card p {
+    color: #CBD5E1 !important;
+}
+
+
+/* =====================================================
+   INTERVIEW CARDS
+   ===================================================== */
+
+.interview-card h3,
+.interview-card strong {
+    color: #F8FAFC !important;
+}
+
+.interview-card p {
+    color: #CBD5E1 !important;
+}
+
+
+/* =====================================================
+   PRIMARY BUTTONS
+   ===================================================== */
+
+button,
+.apply-button,
+.schedule-button,
+.btn-primary {
+    background-color: #ce3bf6 !important;
+    color: #F8FAFC !important;
+    border-color: #3be0f6 !important;
+}
+
+
+/* Button hover */
+button:hover,
+.apply-button:hover,
+.schedule-button:hover,
+.btn-primary:hover {
+    background-color: #923bf6 !important;
+    border-color: #2563EB !important;
+}
+
+
+/* =====================================================
+   LOGOUT BUTTON
+   ===================================================== */
+
+#logoutButton {
+    background-color: #ce3bf6 !important;
+    color: #F8FAFC !important;
+}
+
+#logoutButton:hover {
+    background-color: #923bf6 !important;
+    color: #FFFFFF !important;
+}
+
+
+/* =====================================================
+   LINKS
+   ===================================================== */
+
+a {
+    color: #3B82F6 !important;
+}
+
+a:hover {
+    color: #2563EB !important;
+}
+
+
+/* =====================================================
+   INPUTS / TEXTAREAS / SELECT
+   ===================================================== */
+
+input,
+textarea,
+select {
+    background-color: #0F172A !important;
+    color: #F8FAFC !important;
+    border: 1px solid #475569 !important;
+}
+
+
+/* Input focus */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #3B82F6 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25) !important;
+}
+
+
+/* Placeholder */
+input::placeholder,
+textarea::placeholder {
+    color: #94A3B8 !important;
+}
+
+
+/* =====================================================
+   JOB SEARCH
+   ===================================================== */
+
+#jobSearch {
+    background-color: #0F172A !important;
+    color: #F8FAFC !important;
+    border: 1px solid #475569 !important;
+}
+
+#jobSearch::placeholder {
+    color: #94A3B8 !important;
+}
+
+
+/* =====================================================
+   TABLES
+   ===================================================== */
+
+table {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+}
+
+th {
+    background-color: #3B82F6 !important;
+    color: #FFFFFF !important;
+}
+
+td {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+    border-color: #334155 !important;
+}
+
+
+/* =====================================================
+   STATUS / SUCCESS MESSAGES
+   ===================================================== */
+
+.success,
+.success-message {
+    color: #F8FAFC !important;
+}
+
+
+/* =====================================================
+   GENERAL TEXT
+   ===================================================== */
+
+p,
+label,
+span {
+    color: #F8FAFC;
+}
+
+
+/* =====================================================
+   SCROLLBAR
+   ===================================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0F172A;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #923bf6;
+} */
+
+/* =====================================================
+   HIREHUB POLISHING
+===================================================== */
+
+.job-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.job-actions button {
+    flex: 1;
+    min-width: 120px;
+}
+
+
+.secondary-button {
+    background-color: #2563EB !important;
+    color: #F8FAFC !important;
+}
+
+
+.danger-button {
+    background-color: #DC2626 !important;
+    color: #FFFFFF !important;
+}
+
+
+.dashboard-card {
+    background-color: #1E293B;
+    color: #F8FAFC;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border: 1px solid #334155;
+}
+
+
+.dashboard-card h2 {
+    color: #A5B4FC;
+}
+
+
+.dashboard-card label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+
+.dashboard-card input,
+.dashboard-card textarea,
+.dashboard-card select {
+    width: 100%;
+    padding: 11px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+.dashboard-card textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+
+.interview-card {
+    background-color: #1E293B;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+}
+
+/* =========================================
+   NOTIFICATIONS - DARK THEME
+========================================= */
+
+.notifications-section {
+    margin: 25px 0;
+    padding: 25px;
+    background-color: #1E293B;
+    color: #F8FAFC;
+    border: 1px solid #334155;
+    border-radius: 12px;
+}
+
+.notifications-section h2 {
+    color: #F8FAFC;
+    margin-top: 0;
+}
+
+.notification-card {
+    padding: 18px;
+    margin: 12px 0;
+    background-color: #0F172A;
+    color: #F8FAFC;
+    border: 1px solid #334155;
+    border-radius: 10px;
+}
+
+.notification-card.unread {
+    background-color: #312044;
+    border-left: 4px solid #CE3BF6;
+}
+
+.notification-card p {
+    color: #F8FAFC;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.notification-card small {
+    display: inline-block;
+    color: #CBD5E1;
+    margin-right: 12px;
+}
+
+.notification-card button {
+    background-color: #CE3BF6;
+    color: #FFFFFF;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+}
+
+.notification-card button:hover {
+    background-color: #923BF6;
+}
+
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* =====================================
+   HIREHUB SMARTMATCH
+===================================== */
+
+.smartmatch-score {
+    color: #16A34A;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+#recommendationsContainer .application-card {
+    margin-bottom: 18px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+}
+
+#recommendationsContainer .application-card h3 {
+    margin-bottom: 12px;
+}
+
+#recommendationsContainer .application-card p {
+    margin: 8px 0;
+}

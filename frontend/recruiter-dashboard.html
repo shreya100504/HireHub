@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HireHub - Recruiter Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        HireHub
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <button id="logoutButton">Logout</button>
+    </nav>
+
+</header>
+
+
+<main class="dashboard-container">
+
+    <h1>Recruiter Dashboard</h1>
+
+    <p id="recruiterInfo">
+        Loading recruiter information...
+    </p>
+
+
+    <!-- ========================= -->
+    <!-- CREATE JOB -->
+    <!-- ========================= -->
+
+    <section class="dashboard-card">
+
+        <h2>Post a New Job</h2>
+
+        <form id="jobForm">
+
+            <label>Job Title</label>
+            <input
+                type="text"
+                id="jobTitle"
+                placeholder="e.g. Python Developer"
+                required
+            >
+
+            <label>Description</label>
+            <textarea
+                id="jobDescription"
+                placeholder="Describe the job..."
+                required
+            ></textarea>
+
+            <label>Skills</label>
+            <input
+                type="text"
+                id="jobSkills"
+                placeholder="Python, FastAPI, SQL"
+                required
+            >
+
+            <label>Experience Level</label>
+            <input
+                type="text"
+                id="experienceLevel"
+                placeholder="Fresher"
+                required
+            >
+
+            <label>Employment Type</label>
+            <input
+                type="text"
+                id="employmentType"
+                placeholder="Full-time"
+                required
+            >
+
+            <label>Location</label>
+            <input
+                type="text"
+                id="jobLocation"
+                placeholder="Mumbai, Maharashtra"
+                required
+            >
+
+            <label>
+                <input
+                    type="checkbox"
+                    id="isRemote"
+                >
+                Remote Job
+            </label>
+
+            <label>Minimum Salary</label>
+            <input
+                type="number"
+                id="salaryMin"
+                placeholder="300000"
+            >
+
+            <label>Maximum Salary</label>
+            <input
+                type="number"
+                id="salaryMax"
+                placeholder="600000"
+            >
+
+            <label>Number of Openings</label>
+            <input
+                type="number"
+                id="openings"
+                value="1"
+                min="1"
+                required
+            >
+
+            <label>Application Deadline</label>
+            <input
+                type="date"
+                id="applicationDeadline"
+            >
+
+            <button
+                type="submit"
+                id="jobSubmitButton"
+            >
+                Post Job
+            </button>
+
+            <button
+                type="button"
+                id="cancelEditButton"
+                class="secondary-button"
+                style="display:none;"
+            >
+                Cancel Edit
+            </button>
+
+        </form>
+
+        <p id="jobMessage"></p>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- JOBS -->
+    <!-- ========================= -->
+
+    <section class="dashboard-card">
+
+        <h2>My Jobs</h2>
+
+        <div id="myJobsContainer">
+
+            <p>Loading jobs....</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- APPLICANTS -->
+    <!-- ========================= -->
+
+    <section class="dashboard-card">
+    <h2>Applications</h2>
+
+    <div id="applicationsContainer">
+        <p>Select a job to view its applicants.</p>
+    </div>
+</section>
+
+
+<!-- ========================= -->
+<!-- SCHEDULE INTERVIEW -->
+<!-- ========================= -->
+
+<section class="dashboard-card">
+
+    <h2>Schedule Interview</h2>
+
+    <form id="interviewForm">
+
+        <label>Application ID</label>
+        <input
+            type="number"
+            id="interviewApplicationId"
+            placeholder="e.g. 1"
+            required
+        >
+
+        <label>Interview Date & Time</label>
+        <input
+            type="datetime-local"
+            id="interviewDateTime"
+            required
+        >
+
+        <label>Interview Type</label>
+        <select id="interviewType" required>
+            <option value="Online">Online</option>
+            <option value="Offline">Offline</option>
+            <option value="Phone">Phone</option>
+        </select>
+
+        <label>Meeting Link</label>
+        <input
+            type="url"
+            id="meetingLink"
+            placeholder="https://meet.google.com/..."
+        >
+
+        <label>Venue</label>
+        <input
+            type="text"
+            id="interviewVenue"
+            placeholder="Online / Office address"
+        >
+
+        <button type="submit">
+            Schedule Interview
+        </button>
+
+    </form>
+
+    <p id="interviewMessage"></p>
+
+</section>
+
+
+=========================
+<!-- SCHEDULED INTERVIEWS -->
+<!-- ========================= -->
+
+<section class="dashboard-card">
+
+    <h2>Scheduled Interviews</h2>
+
+    <div id="recruiterInterviewsContainer">
+        <p>Loading interviews...</p>
+    </div>
+
+</section>
+
+<section class="notifications-section"> 
+    <h2>
+        Notifications
+        (<span id="unreadNotificationCount">0</span> unread)
+    </h2>
+
+    <div id="notificationsContainer">
+        <p>Loading notifications...</p>
+    </div>
+</section>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>

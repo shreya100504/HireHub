@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HireHub - Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        HireHub
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+
+        <button id="logoutButton">
+            Logout
+        </button>
+    </nav>
+
+</header>
+
+
+<main class="dashboard-container">
+
+    <h1>Admin Dashboard</h1>
+
+    <p id="adminInfo">
+        Loading admin information...
+    </p>
+
+
+    <!-- ========================= -->
+    <!-- STATISTICS -->
+    <!-- ========================= -->
+
+    <section class="dashboard-card">
+
+        <h2>System Overview</h2>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <h3>Total Users</h3>
+                <p id="totalUsers">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Candidates</h3>
+                <p id="totalCandidates">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Recruiters</h3>
+                <p id="totalRecruiters">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Total Jobs</h3>
+                <p id="totalJobs">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Approved Jobs</h3>
+                <p id="approvedJobs">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Applications</h3>
+                <p id="totalApplications">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Shortlisted</h3>
+                <p id="shortlistedApplications">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Interviews</h3>
+                <p id="totalInterviews">0</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- PENDING JOBS -->
+    <!-- ========================= -->
+
+    <section class="dashboard-card">
+
+        <h2>Pending Job Approvals</h2>
+
+        <div id="pendingJobsContainer">
+
+            <p>
+                Loading pending jobs...
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>

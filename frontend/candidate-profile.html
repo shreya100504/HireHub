@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>HireHub - My Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        HireHub
+    </div>
+
+    <nav>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <button id="logoutButton">
+            Logout
+        </button>
+
+    </nav>
+
+</header>
+
+
+<main class="dashboard-container">
+
+    <h1>
+        My Profile
+    </h1>
+
+    <p id="profileMessage">
+        Loading profile...
+    </p>
+
+
+    <!-- PROFILE -->
+
+    <section class="dashboard-card">
+
+        <h2>
+            Professional Information
+        </h2>
+
+        <form id="candidateProfileForm">
+
+            <label>
+                Phone
+            </label>
+
+            <input
+                type="text"
+                id="profilePhone"
+                placeholder="9876543210"
+            >
+
+
+            <label>
+                Education
+            </label>
+
+            <textarea
+                id="profileEducation"
+                placeholder="B.Tech in AI & Data Science"
+            ></textarea>
+
+
+            <label>
+                Technical Skills
+            </label>
+
+            <textarea
+                id="profileSkills"
+                placeholder="Python, SQL, FastAPI..."
+            ></textarea>
+
+
+            <label>
+                Experience / Projects
+            </label>
+
+            <textarea
+                id="profileExperience"
+                placeholder="Projects, internships, experience..."
+            ></textarea>
+
+
+            <label>
+                Certifications
+            </label>
+
+            <textarea
+                id="profileCertifications"
+                placeholder="Certifications"
+            ></textarea>
+
+
+            <label>
+                LinkedIn URL
+            </label>
+
+            <input
+                type="url"
+                id="profileLinkedin"
+                placeholder="https://linkedin.com/in/..."
+            >
+
+
+            <label>
+                Portfolio URL
+            </label>
+
+            <input
+                type="url"
+                id="profilePortfolio"
+                placeholder="https://..."
+            >
+
+
+            <button
+                type="submit"
+                id="profileSubmitButton"
+            >
+                Save Profile
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- RESUME -->
+
+    <section class="dashboard-card">
+
+        <h2>
+            Resume
+        </h2>
+
+        <p id="currentResume">
+            No resume uploaded yet.
+        </p>
+
+        <form id="resumeForm">
+
+            <input
+                type="file"
+                id="resumeFile"
+                accept=".pdf,.doc,.docx"
+                required
+            >
+
+            <button type="submit">
+                Upload Resume
+            </button>
+
+        </form>
+
+        <p id="resumeMessage"></p>
+
+    </section>
+
+</main>
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
