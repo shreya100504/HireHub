@@ -79,9 +79,3 @@ API documentation:
 ## Environment Variables
 
 Create an `.env` file for the backend configuration.
-
-Do not commit credentials or secrets to GitHub.
-
-## Project Status
-
-Developed as a Job Portal & Recruitment Management System project.
