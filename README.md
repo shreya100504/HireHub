@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # HireHub – Job Portal & Recruitment Management System
 
 HireHub is a web-based job portal that connects job seekers with recruiters and helps manage the recruitment process.
@@ -168,4 +167,3 @@ API documentation:
 ## Environment Variables
 
 Create an `.env` file for the backend configuration.
->>>>>>> 3577e77b2d07c90960738c6f6cf2dac2dcd27652
