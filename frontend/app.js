@@ -1,5 +1,5 @@
-const API_URL = "http://127.0.0.1:8000";
-
+// const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://hirehub-backend-s2o2.onrender.com";
 
 // =====================================================
 // NOTIFICATIONS
